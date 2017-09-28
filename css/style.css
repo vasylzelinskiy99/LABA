@@ -1,0 +1,132 @@
+body{
+    font-family: 'Pangolin', cursive;
+    font-family: 'Indie Flower', cursive;
+    color: #333
+}
+img.responsive{
+    width: 100%;
+    height: auto;
+    display: block
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style:none;
+}
+.menu-item{
+  line-height: 50px  
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+button{
+    background: none;
+    border: 1px solid #696969;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 1em auto;
+}
+.logo{
+    height: 50px;
+}
+.drop-down{
+    position: relative
+}
+.drop-down ul{
+    position: absolute;
+    bottom 0;
+    display: none;
+    list-style: none;
+    background: #DCDCDC;
+    padding-left: 0;
+}
+.drop-down ul li{
+    padding: 0 20px;
+     transition: all .2s;
+}
+.drop-down:hover ul{
+    display: inline;
+}
+.drop-down ul li:hover{
+    background-color: #e0e0e0
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2em;
+}
+.title{
+    text-align: center;
+    margin: 2em 0;
+}
+.news{
+    display: flex;
+}
+.article{
+    width: 33%;
+    border: solid 1px #ccc;
+    margin: 1em
+}
+.article h3, .article p{
+      padding: 0 20px;
+}
+.article img{
+    width: 100%;
+    height: auto
+}
+footer{
+    padding: 1em 0;
+    text-align: center;
+    background-color: #696969;
+}
+table{
+    width: 100%;
+    text-align: left;
+     border-collapse: collapse;
+    margin-bottom: 2em;
+}
+.contacts{
+    text-align: center
+}
+.feedback{
+    padding: 2em 0;
+}
+.feedback:nth-child(3){
+    border-top: 2px solid #ccc;
+}
+.feedback h2, .feedback span{
+    display: inline-block;
+}
+.feedback span{
+    color: #ccc;
+    font-style: italic;
+    margin-left: 1em;
+}
+
+textarea{
+    margin-top: 2em;
+    width: 100%;
+    margin-bottom: 1em
+}
+.button{
+    text-align: right;
+    margin-bottom: 2em;
+}
+
+.adminpanel{
+    display: flex
+}
+.adminpanel > div{
+    width: 50%;
+}
+.adminpanel input{
+    display: block;
+    margin-top: 1em;
+    padding: 10px;
+}
+.text{
+    height: 300px;
+    width: 70%;
+}
