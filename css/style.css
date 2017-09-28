@@ -29,7 +29,7 @@ button{
     margin: 1em auto;
 }
 .logo{
-    height: 50px;
+    height: 75px;
 }
 .drop-down{
     position: relative
@@ -55,7 +55,7 @@ button{
 .container{
     max-width: 1200px;
     margin: auto;
-    padding: 0 2em;
+    padding: 0 1em;
 }
 .title{
     text-align: center;
@@ -65,7 +65,7 @@ button{
     display: flex;
 }
 .article{
-    width: 33%;
+    width: 50%;
     border: solid 1px #ccc;
     margin: 1em
 }
@@ -83,7 +83,7 @@ footer{
 }
 table{
     width: 100%;
-    text-align: left;
+    text-align: center;
      border-collapse: collapse;
     margin-bottom: 2em;
 }
