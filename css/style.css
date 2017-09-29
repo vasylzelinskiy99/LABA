@@ -39,7 +39,7 @@ button{
     bottom 0;
     display: none;
     list-style: none;
-    background: #DCDCDC;
+    background: #696969;
     padding-left: 0;
 }
 .drop-down ul li{
@@ -79,6 +79,7 @@ button{
 footer{
     padding: 1em 0;
     text-align: center;
+    color: #FFFFFF;
     background-color: #696969;
 }
 table{
