@@ -1,15 +1,15 @@
 body{
     font-family: 'Pangolin', cursive;
     font-family: 'Indie Flower', cursive;
-    color: #333
-}
+    background-color: #F7E4C5;
+ }
 img.responsive{
     width: 100%;
     height: auto;
     display: block
 }
 .menu{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     list-style:none;
@@ -29,7 +29,8 @@ button{
     margin: 1em auto;
 }
 .logo{
-    height: 75px;
+    height: 100px;
+    border: solid 1px #0D0B1B;
 }
 .drop-down{
     position: relative
@@ -39,7 +40,7 @@ button{
     bottom 0;
     display: none;
     list-style: none;
-    background: #696969;
+    background: #38925E;
     padding-left: 0;
 }
 .drop-down ul li{
@@ -50,7 +51,7 @@ button{
     display: inline;
 }
 .drop-down ul li:hover{
-    background-color: #e0e0e0
+    background-color: #F7E4C5
 }
 .container{
     max-width: 1200px;
@@ -64,70 +65,28 @@ button{
 .news{
     display: flex;
 }
-.article{
-    width: 50%;
-    border: solid 1px #ccc;
-    margin: 1em
-}
-.article h3, .article p{
-      padding: 0 20px;
-}
-.article img{
-    width: 100%;
-    height: auto
-}
 footer{
     padding: 1em 0;
     text-align: center;
     color: #FFFFFF;
-    background-color: #696969;
-}
-table{
-    width: 100%;
-    text-align: center;
-     border-collapse: collapse;
-    margin-bottom: 2em;
-}
-.contacts{
-    text-align: center
-}
-.feedback{
-    padding: 2em 0;
-}
-.feedback:nth-child(3){
-    border-top: 2px solid #ccc;
-}
-.feedback h2, .feedback span{
-    display: inline-block;
-}
-.feedback span{
-    color: #ccc;
-    font-style: italic;
-    margin-left: 1em;
-}
-
-textarea{
-    margin-top: 2em;
-    width: 100%;
-    margin-bottom: 1em
-}
-.button{
-    text-align: right;
-    margin-bottom: 2em;
-}
-
-.adminpanel{
-    display: flex
-}
-.adminpanel > div{
-    width: 50%;
-}
-.adminpanel input{
-    display: block;
-    margin-top: 1em;
-    padding: 10px;
+    background-color: #38925E;
 }
 .text{
     height: 300px;
     width: 70%;
+}
+.news{
+    display: flex;
+}
+.article{
+    width: 50%;
+    border: solid 1px #0D0B1B;
+    margin: 1em
+}
+.article h3, .article p{
+      padding: 0 10px;
+}
+.article img{
+    width: 100%;
+    height: auto
 }
