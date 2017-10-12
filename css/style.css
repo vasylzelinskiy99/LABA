@@ -14,8 +14,9 @@ img.responsive{
     justify-content: space-around;
     list-style:none;
 }
-.menu-item{
-  line-height: 50px  
+.menu-item:hover{
+    line-height: 50px;
+    text-decoration: none;
 }
 a{
     text-decoration: none;
@@ -62,7 +63,7 @@ button{
     text-align: center;
     margin: 2em 0;
 }
-footer{
+.footer{
     width: 100%;
     padding: 1em 0;
     text-align: center;
