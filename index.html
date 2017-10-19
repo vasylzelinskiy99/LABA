@@ -1,53 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<title>Головна</title>
 	<meta charset="utf-8">
-	<title>Спеціальні правові режими технопарків та технополісів</title>
-	<link rel="stylesheet" href="css\style.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<style>
+	           body  {
+	           font-family: 'Pangolin', cursive;
+             background-color: #FFFFFF;
+ 
+	            }
+	            
+	            h3 {
+	            text-align: center;
+	            color:#000000;
+	            font-size: 150%;    
+	            }
+	            
+	            p {
+	               color: #696969;
+	               font-size: 150%;
+	               text-align: left;
+	            }
+	            
+	            strong {
+	            color: #000000;
+	            }
+	            .panel-footer {
+	            text-align: center;
+              color: #FFFFFF;
+              background-color: #000000;
+
+	            }
+	             
+	            
+	</style>
 </head>
+
 <body>
-	<header>
-		<nav class="nav">
-			<ul class="menu"><p></p>
-					<img class="logo" src="img/forrest.png">
-				<li class="menu-item">
-					<a href="index.html">Головна</a>
-				</li>
-				<li class="menu-item">
-					<a href="news.html">Новини</a>
-				</li>
-				<li class="menu-item drop-down">
-					<a href="">Студентам</a>
-					<ul>
-						<li><a href="programm.html">Програма</a></li>
-						<li><a href="labs.html">Лабораторні</a></li>
-						<li><a href="lit.html">Література</a></li>
-					</ul>
-				</li>
-				<li class="menu-item">
-					<a href="feedback.html">Відгуки</a>
-				</li>
-				<li class="menu-item">
-					<a href="contact.html">Контакти</a>
-				</li>
-				<li class="menu-item">
-					<a href="admin.html">Адмін</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
+				<a class="navbar-brand" href="#">Zelinskiy</a>
+			</div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">Головна</a>
+				   <li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Студентам<span class="caret"></span></a>
+
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Програма</a>
+							</li>
+
+							<li>
+								<a href="#">Лабораторні</a>
+							</li>
+
+							<li>
+								<a href="#">Література</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Відгуки</a>
+					</li>
+
+					<li>
+						<a href="#">Контакти</a>
+					</li>
+				   <li>
+						<a href="#">Адмін</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+
 	<div class="container">
-		<h1 class="title">Про предмет</h1>
-		<div class="info-block">
-			<p>
-			</p>
-			<p><b>Мета:</b>вивчення теоретичних аспектів спеціального режиму технопарків та
+		<div class="page-header">
+			<h3><strong>ПРО ПРЕДМЕТ</strong></h3>
+		</div>
+     <p><strong>Мета:</strong>вивчення теоретичних аспектів спеціального режиму технопарків та
 				технополісів (поняття, критерії, особливості, цілі, юридичні конструкції видів, роль
 				у господарському праві тощо), а також обґрунтування задач і напрямів модернізації
 			законодавства про спеціальний режим технопарків та технополісів..</p>
-			<p><b>Предмет:</b>теоретико-правові аспекти спеціального режиму технопарків та
+			<p><strong>Предмет:</strong>теоретико-правові аспекти спеціального режиму технопарків та
 			технополісів</p>
-			<p><b>Зміст:</b>місце курсу «Спеціальні правові режими технопарків та технополісів» серед
+			<p><strong>Зміст:</strong>місце курсу «Спеціальні правові режими технопарків та технополісів» серед
 				інших юридичних дисциплін. Джерела правового регулювання курсу «Спеціальні
 				правові режими технопарків та технополісів». Державне регулювання створення та
 				функціонування технопарків та технополісів. Поняття та правова природа
@@ -56,34 +106,30 @@
 				діяльності технологічних парків (технопарків). Особливості спеціального правового
 				режиму наукових парків. Спеціальний правовий режим діяльності в технополісах.
 				Правове регулювання діяльності у сфері трансферу технологій. Державно-правові
-			гарантії суб’єктам інноваційних структур.</p>
-			<p><b>Місце у навчальному процесі</b> – обов’язкова, 1 семестр.<b>«Спеціальні правові режими технопарків та
-			технополісів»</b> здобувач вищої освіти повинен:
-			<p><b>Знати:</b></p>
-		</p>
+			гарантії суб’єктам інноваційних структур.
 
-		<ul>
-			<li>правове регулювання курсу спеціальних правових режимів технопарків та технополісів;
-			</li>
-			<li>наукові позиції щодо спеціальних правових режимів технопарків та технополісів;</li>
-			<li>проблеми судової практики щодо спеціальних правових режимів технопарків та
-			технополісів;</li>
-		</ul>
 
-		<p><b>Вміти:</b></p>
+		<div class="page-header">
+			<h3><strong>ОСТАННІ НОВИНИ</strong></h3>
+		</div>
 
-		<ul>
-			<li>правильно застосовувати міжнародні акти, чинне законодавствоУкраїни;</li>
-			<li>аналізувати практичні ситуації;</li>
-			<li>пропонувати вирішення проблемних питань щодо спеціальних правових режимів
-			технопарків та технополісів.</li>
-		</ul>
+
+		<p>У результаті вивчення дисципліни «Проблеми теорії та практики застосування Цивільного процесуального кодексу 
+			України» здобувач вищої освіти повинен:</p>
+
+
+		<p><strong>Знати:</strong> міжнародно-правові акти та акти національного законодавства, що регулюють питання 
+			застосування ЦПК; тенденції судової практики застосування ЦПК; основні напрямки судової реформи та 
+			вдосконалення цивільного процесуального законодавства;</p>
+
+
+		<p><strong>Вміти:</strong> складати необхідні процесуальні документи; правильно тлумачити цивільне процесуальне 
+			законодавство; виконувати будь-яку роботу, пов’язану з забезпеченням цивільної справи доказовим матеріалом, 
+			застосовуючи набуті знання; формувати власну думку щодо шляхів удосконалення цивільного процесуального законодавства.</p>
+    <div class="panel panel-default">
+		<div class="panel-footer">
+			Copyright (c) 2017 by Zelinskiy Vasyl
+		</div>
 	</div>
-	
-<footer>
-	<div class="footer">
-Copyright (c) 2017 by Zelinskiy Vasyl
-</div>
-</footer>
 </body>
 </html>
