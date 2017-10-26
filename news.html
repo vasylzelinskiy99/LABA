@@ -24,26 +24,27 @@
 	            
 	            p {
 	               color: #696969;
-	               font-size: 150%;
+	               font-size: 120%;
 	               text-align: left;
 	            }
 	            
 	            strong {
 	            color: #000000;
 	            }
-	            .panel-footer {
+	            .footer {
 	            text-align: center;
               color: #FFFFFF;
               background-color: #000000;
+              bottom: 0;
+              width: 100%;
+              left: 0;
 
 	            }
 	            .article{
 	            	border: 2px solid #ccc;
 	            }
 
-	            .container{
-
-	            }
+	            
 
 	            
 	</style>           
@@ -86,10 +87,10 @@
 					<li>
 						<a href="contacts.html">Контакти</a>
 					</li>
-				   <li>
+				   <li  class="active">
 						<a href="admin.html">Адмін</a>
 					</li>
-					<li class="active">
+					<li>
 						<a href="news.html">Новини</a>
 					</li>
 				</ul>
@@ -126,11 +127,15 @@
     </div>
   </div>
 	</div>
-<div class="panel panel-default">
-		<div class="panel-footer">
-			Copyright (c) 2017 by Zelinskiy Vasyl
-		</div>
-	</div>
+<div class="col-sm-18">
+        <div id="footer">
+            <div class="footer">
+                <div class="name">    
+                       <p>©Copyright 2017 Vasyl Zelinskiy </p>  
+                     </div>
+                  </div>
+                </div>
+              </div>
 </body>
 </html>
 
