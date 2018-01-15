@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+  <head>
+    <meta charset="utf-8">
+    <title>Правове регулювання надання туристичних послуг</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    <ul class="navbar-nav">
+	      <li class="nav-item ">
+	        <a class="nav-link" href="index.html">Головна <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="news.html">Новини</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Студентам
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          <a class="dropdown-item" href="curriculum.html">Програма</a>
+	          <a class="dropdown-item" href="#">Лабораторні</a>
+	          <a class="dropdown-item" href="#">Література</a>
+	        </div>
+	      </li>
+	      <li class="nav-item active">
+	        <a class="nav-link" href="feedback.html">Відгуки</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="contacts.html">Контакти</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="admin.html">Aдмін</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<div class = container>
+		<div class="row">
+			<div class = col-lg>
+				<p>
+					<span class="h2 pull-left">Вася Пупкін</span>
+					<span><i>11.11.2017, 14:00</i></span>
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class = col-lg>
+				<p>
+					<span class="h2 pull-left">Вася Пупкін</span>
+					<span><i>11.11.2017, 14:00</i></span>
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row" id="newResponseField">
+			<div class = "col-lg">
+				<div class="form-group">
+					<textarea class="form-control" rows="1" id="name" placeholder="Ваше ім'я..."></textarea>
+					<br>
+					<textarea class="form-control" rows="5" id="comment" placeholder = "Новий відгук..."></textarea>
+				</div>
+				<button class="btn btn-primary float-right" type="submit" onclick="addResponse()">Відправити</button>
+			</div>
+		</div>
+	</div>
+	<footer class = "footer">
+		<div class = "container">
+			<center>
+				<span class = "text">Made by: Yurii Pasternak</span>
+				<br>
+				<span class = "text">Contact information: <a href="mailto:someone@example.com">thebest@gmail.com</a>.</span>
+			</center>
+		</div>
+	</footer>
+
+	<script>
+		function addResponse(){
+			var responseText = document.getElementById("comment");
+			var nameText = document.getElementById("name");
+			if(nameText.value == ""){
+				alert("Вкажіть ваше ім'я");
+				return;
+			}
+			if(responseText.value == ""){
+				alert("Порожній відгук!");
+				return;
+			}
+			var responseField = document.getElementById("newResponseField");
+			var element = document.getElementById("responses");
+
+			var responseRow = document.createElement("div");
+			responseRow.setAttribute("class", 'row');
+			var responseCol = document.createElement("div");
+			responseCol.setAttribute("class", "col-lg");
+			var responseHeader = document.createElement("p");
+			var responseFill = document.createElement("p");
+			var responseHeaderName = document.createElement("span");
+			responseHeaderName.setAttribute("class", "h2 pull-left");
+			var responseHeaderDate = document.createElement("span");
+			var responseHeaderDateItalic = document.createElement("i");
+			var date = new Date();
+			var dateString = "";
+			dateString = date.getDate() + "." + date.getMonth() + "." + (date.getFullYear())
+				+ ", " + date.getHours() + ":" + date.getMinutes();
+			responseHeaderDateItalic.innerHTML = dateString;
+			responseHeaderName.innerHTML = nameText.value + " ";
+			responseFill.innerHTML = responseText.value;
+
+			responseHeaderDate.appendChild(responseHeaderDateItalic);
+			responseHeader.appendChild(responseHeaderName);
+			responseHeader.appendChild(responseHeaderDate);
+			responseCol.appendChild(responseHeader);
+			responseCol.appendChild(responseFill);
+			responseRow.appendChild(responseCol);
+
+			element.insertBefore(responseRow, responseField);
+			element.insertBefore(document.createElement("hr"), responseField);
+			responseText.value = "";
+			nameText.value = "";
+		}
+	</script>
+	<script src="js/jquery-3.2.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+  </body>
+</html>

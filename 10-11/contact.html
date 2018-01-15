@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru"  manifest="cache.appcache">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Курс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+    <body>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="#">  <img class="logo" src="img/img.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav nav menu">
+            <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">Новини</a></li>
+            <li class="nav-item" style="position:relative">
+              <a href="" class="dropdown-toggle dropdown-toggle-split nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Студентам</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="programm.html">Програма</a>
+                <a class="dropdown-item" href="labs.html">Лабораторні</a>
+                      <a class="dropdown-item" href="lit.html">Література</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html">Відгуки</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+                <li class="nav-item"><a class="nav-link" href="admin.html">Адмін</a></li>
+              </div>
+            </div>
+          </nav>
+        </header>
+    <div class="container">
+        <img src="img/img-big.jpg" alt="текст замість картинки" class="responsive">
+        <div class="contacts">
+         <h1 class="title">Контакти</h1>
+        <p>
+            Адреса: Чупринки 117<br>
+            Тел: 232 233 233
+        </p>
+        </div>
+        </div>
+          <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwgJh1MbsMAMY4ESWO2aLw8xVtLzDYGZM&callback=initMap">
+    </script>
+        <footer>
+            (c)Copyright
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+CACHE MANIFEST
+
+CACHE:
+/admin.html
+/news.html
+/feedback.html
+/curriculum.html
+/css/bootstrap.css
+/css/sticky-footer.css
+/js/jquery-3.2.1.slim.min.js
+/js/popper.min.js
+/js/bootstrap.js
+/img/img.jpg
+
+
+FALLBACK:
+/error.html

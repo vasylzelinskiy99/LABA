@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Курс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <a class="navbar-brand" href="#">  <img class="logo" src="img/img.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav nav menu">
+        <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">Новини</a></li>
+        <li class="nav-item" style="position:relative">
+          <a href="" class="dropdown-toggle dropdown-toggle-split nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Студентам</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="programm.html">Програма</a>
+            <a class="dropdown-item" href="labs.html">Лабораторні</a>
+                  <a class="dropdown-item" href="lit.html">Література</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Відгуки</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Контакти</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin.html">Адмін</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+        <h1 class="title">Відгуки</h1>
+        <div id="feedbacksWrap">
+        <div class="feedback">
+            <h2>Вася Пупкін</h2>
+            <span>11.12.12</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum earum, repudiandae quo animi optio molestiae quibusdam minus ullam, unde praesentium deleniti? Non repudiandae magnam omnis accusamus aut sit tempora expedita.</p>
+        </div>
+        <div class="feedback">
+            <h2>Вася Пупкін</h2>
+            <span>11.12.12</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum earum, repudiandae quo animi optio molestiae quibusdam minus ullam, unde praesentium deleniti? Non repudiandae magnam omnis accusamus aut sit tempora expedita.</p>
+        </div>
+      </div>
+        <textarea label="feedback" id="feedback" rows="10" placeholder="Новий відгук"></textarea>
+        <div class="btn btn-light">
+            <button for="feedback" id="feedbackButton" type="submit">Відправити</button>
+        </div>
+    </div>
+    <footer>
+        (c)Copyright
+    </footer>
+    <script src="js/feedback.js"></script>
+</body>
+
+</html>
